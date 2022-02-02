@@ -1,0 +1,17 @@
+import java.util.*;  
+public class BouncyNumberExample1  
+{  
+public static void main(String args[])   
+{  
+Scanner scan = new Scanner(System.in);  
+System.out.print("Enter any number you want to check: ");  
+//reading an integer from the user  
+int inputNumber = scan.nextInt();  
+//if any of the following condition returns true, the number id not bouncy   
+if (isIncreasing(inputNumber) || isDecreasing(inputNumber) || inputNumber < 101)  
+//prints if the number is not bouncy  
+System.out.println(inputNumber+" not a bouncy number.");  
+else  
+//prints if the number is bouncy  
+System.out.println(inputNumber+" is a bouncy number.");  
+}  
